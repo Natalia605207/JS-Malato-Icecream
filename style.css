@@ -1,0 +1,762 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+  text-decoration: none;
+  text-align: center;
+}
+
+body {
+  position: relative;
+  margin:0;
+  background-color: #59C2C7;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: #FF4562;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 15px 50px;
+  color: #FFF;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+li a {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 20px 15px;
+  transition: 0.5s;
+  color: #FFF;
+}
+
+li a:hover {
+  color: #F8FFD5;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.logo {
+  width: 150px;
+}
+
+.hide {
+  top: 80px;
+}
+
+.top-container {
+  display: flex;
+  margin: 150px 0px 40px;
+}
+
+.top-photo {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.top-icecream {
+  width: 80%;
+}
+
+.heading {
+  font-family: 'Satisfy', cursive;
+  font-size: 55px;
+  font-weight: 400;
+  color: #FFF;
+  padding: 50px 0px 40px;
+}
+
+h2 {
+  font-size: 70px;
+  font-weight: bold;
+  color: #FBC81F;
+  text-align: left;
+}
+
+.top {
+  font-size: 35px;
+  color: #FFF;
+  padding-top: 20px;
+}
+
+.top-icons {
+  display: flex;
+  padding-top: 100px;
+}
+
+.icon-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.rotate-icon {
+  background-color: #FF4562;
+  border: 3px solid #FFF;
+  border-radius: 50%;
+  transition: 1s;
+}
+
+.rotate-icon:hover {
+  transform: rotate(360deg);
+}
+
+.infoUnderIcon {
+  font-size: 25px;
+  color: #FFF;
+}
+
+.infoUnderIcon:hover {
+  color: #FF4562;
+}
+
+.section-container {
+  background-color: #F8FFD5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-headings {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.center-heading {
+  color: #FF4562;
+  font-size: 60px;
+  font-family: 'Satisfy', cursive;
+  font-weight: 400;
+}
+
+.about-block {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+
+.aboutUs-photo {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-photo {
+  width: 70%;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 80px;
+  flex: 1;
+}
+
+.text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 22px;
+  color: #575B53;
+  text-align: left;
+}
+
+.parallax {
+  background-image: url("parallaxOne.jpeg");
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+
+.products {
+  background-color: #FAA9B9;
+}
+
+.corn-icon {
+  margin-bottom: 20px;
+}
+
+.small-heading {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+span {
+  color: #FF4562;
+}
+
+.line {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0px;
+}
+
+.treat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.treat-photo {
+  width: 60%;
+}
+
+.treat-name {
+  color: #FFF;
+  font-size: 45px;
+  font-family: 'Satisfy', cursive;
+  font-weight: 400;
+  padding: 40px 0px 20px;
+}
+
+.btn {
+  background-color: #FF4562;
+  color: #FFF;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.btn:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #D81346;
+  z-index: -1;
+  border: none;
+  border-radius: 30px;
+}
+
+.btn:hover, .btn:focus {
+  color: #FFF;
+}
+
+.btn:hover:before, .btn:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.popsicle {
+  border-radius: 50%;
+  width: 50%;
+}
+
+.parallaxTwo {
+  background-image: url("parallaxTwo.jpg");
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+
+.up {
+  margin: 0;
+}
+
+.advantage-block {
+  display: flex;
+  flex: 1;
+  margin: 0px 10px;
+}
+
+.advantage-image {
+  display: flex;
+  justify-content: center;
+}
+
+.girl {
+  width: 90%;
+}
+
+.advantage-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #575B53;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.corrected {
+  padding: 0;
+}
+
+.inspiration-words {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 55px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FF4562;
+  text-align: left;
+}
+
+.contacts {
+  background-color: #59C2C7;
+}
+
+.white {
+  color: #FFF;
+}
+
+.data {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 60px;
+}
+
+.info {
+  display: flex;
+  margin: 30px;
+}
+
+.icon {
+  align-self: flex-start;
+  padding-right: 10px;
+}
+
+.title-contact {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FFF;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.text-contact {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 18px;
+  color: #FFF;
+  text-align: left;
+}
+
+.left {
+  text-align: left;
+}
+
+.social {
+  align-self: center;
+  padding: 10px;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  border-radius: 30px;
+  margin: 0px 20px;
+}
+
+.iceCream-shop {
+  border-radius: 30px;
+  width: 80%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer {
+  background-color: #FF4562;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.gap {
+  margin-top: 5px;
+}
+
+
+@media all and (max-width: 820px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: -10px;
+  }
+
+  .lineOne, .lineTwo, .lineThree {
+    display: block;
+    background-color: #FFF;
+    height: 2px;
+    width: 35px;
+    transition: 0.5s;
+  }
+
+  .lines-rotate {
+    background-color: #FAA9B9;
+    border-radius: 5px;
+  }
+
+  .lines-rotate .lineOne {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+
+  .lines-rotate .lineTwo {
+    opacity: 0;
+  }
+
+  .lines-rotate .lineThree {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  nav {
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+
+  ul {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -300px;
+    right: 0;
+    background-color: #FF4562;
+    padding: 35px 0;
+    border-radius: 0 0 20px 20px;
+  }
+
+  li a {
+    color: #FFF;
+  }
+
+  li {
+    text-align: center;
+    width: 90vw;
+  }
+
+  li a:hover {
+    font-weight: bold;
+    color:#F8FFD5;
+    border: none;
+    letter-spacing: 2px;
+    text-decoration: none;
+  }
+
+  .top-container {
+    margin: 130px 0px 20px;
+  }
+  
+  .top-icecream {
+    width: 90%;
+  }
+  
+  .heading {
+    font-size: 45px;
+    padding: 20px 0px 30px;
+  }
+  
+  h2 {
+    font-size: 55px;
+  }
+  
+  .top {
+    font-size: 30px;
+  }
+  
+  .top-icons {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+  
+  .icon-top {
+    margin-right: 80px;
+  }
+  
+  .infoUnderIcon, .text {
+    font-size: 20px;
+  }
+
+  .rotate-icon {
+    width: 60px;
+  }
+
+  .main-headings, .about-info {
+    padding: 30px;
+  }
+  
+  .center-heading {
+    font-size: 50px;
+  }
+  
+  .about-block {
+    padding-bottom: 30px;
+  }
+
+  .about-photo, .treat-photo, .icon {
+    width: 85%;
+  }
+
+  .popsicle, .bottom-photo {
+    width: 65%;
+  }
+  
+  .up {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .advantage-block {
+    margin: 20px 10px;
+  }
+
+  .inspiration-words {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .corrected {
+    padding-bottom: 0;
+  }
+
+  .girl {
+    width: 75%;
+  }
+  
+  .wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .iceCream-shop {
+    width: 90%;
+    margin-top: 40px;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .logo, .icon {
+    width: 120px;
+  }
+
+  .top-container {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0px 10px;
+  }
+
+  .top-info {
+    align-items: center;
+  }
+  
+  .top-icecream {
+    width: 85%;
+    margin-top: 30px;
+  }
+
+  .heading {
+    padding: 30px 0px;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 45px;
+    margin: 0px 10px;
+  }
+  
+  .top, .title {
+    font-size: 25px;
+  }
+
+  .top-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .icon-top {
+    margin-right: 0;
+    margin: 0px 15px;
+  }
+
+  .center-heading {
+    font-size: 45px;
+  }
+
+  .about-block {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  .down {
+    padding-bottom: 0;
+}
+
+  .upper {
+    padding-top: 0;
+}
+
+.corn-icon {
+  width: 15%;
+}
+
+.small-heading {
+  font-size: 25px;
+  padding: 0px 10px;
+}
+
+.line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+.treat {
+  margin: 30px 0px;
+}
+
+.treat-photo {
+  width: 70%;
+}
+
+.treat-name {
+  font-size: 40px;
+  padding: 30px 0px 10px;
+}
+
+.up {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.advantage-block {
+  margin: 10px 10px;
+}
+
+.icon {
+  width: 70px;
+}
+
+.inspiration-words {
+  margin-top: 10px;
+  font-size: 45px;
+}
+
+.girl, .bottom-photo {
+  width: 95%;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 0;
+}
+
+.wrap {
+  margin: 15px;
+}
+
+.info {
+  margin: 20px 0px;
+}
+
+.smaller {
+  font-size: 20px;
+  padding: 20px 5px;
+  font-weight: 500;
+}
+
+.small, .social  {
+  width: 55px;
+}
+
+.text-contact {
+  font-size: 16px;
+}
+
+.iceCream-shop {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
