@@ -4,7 +4,7 @@
 
 This is a fully-responsive website of a wonderful ice-cream shop. 
 
-<a href=""><strong>➥ Live Demo</strong></a> 
+<a href="https://malato-ice-cream.netlify.app/"><strong>➥ Live Demo</strong></a> 
 
 </div>
 
