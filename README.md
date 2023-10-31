@@ -4,6 +4,8 @@
 
 This is a fully-responsive website of a wonderful ice-cream shop. 
 
+<a href=""><strong>➥ Live Demo</strong></a> 
+
 </div>
 
 ## Description
