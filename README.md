@@ -1,5 +1,7 @@
 <div align="center">
 
+![](./malato.jpg)
+
 # Malato Ice Cream
 
 This is a fully-responsive website of a wonderful ice-cream shop. 
