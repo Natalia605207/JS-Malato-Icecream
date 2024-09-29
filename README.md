@@ -28,7 +28,7 @@ Moreover, I also practiced JavaScript to make **a responsive fixed top navbar** 
 - [AOS](https://michalsnik.github.io/aos/)
 
 ### Screenshots
-![](./Screenshot_One.jpg)
+![](./assets/Screenshot_One.jpg)
 
 ## License
 
